@@ -1,24 +1,16 @@
-# README
+# Recipe webpage using React
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Ruby on Rails application that stores your favorite recipes then displays them with a React frontend
 
-Things you may want to cover:
+Website created with React following an online advanced tutorial of Chuks Opia (https://www.digitalocean.com/community/tutorials/how-to-set-up-a-ruby-on-rails-project-with-a-react-frontend). <br />
 
-* Ruby version
+The main challenges were to integrate React in the Front-End and Rails in the Back-End of the application. Multiple filters were used in this project to select the rooms, such as:
 
-* System dependencies
+- Create recipes
+- Read recipes
+- Delete recipes
 
-* Configuration
 
-* Database creation
+The project was deployed on Netlify: <br />
+ `Click the Link =>` .
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
