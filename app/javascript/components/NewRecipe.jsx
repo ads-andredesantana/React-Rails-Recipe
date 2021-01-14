@@ -84,15 +84,15 @@ class NewRecipe extends React.Component {
               </div>
 
               <div className="form-group">
-                <label htmlFor="recipeImages">Picture Link</label>
-                <input type="text" name="ingredients" id="recipeImage" className="form-control" required onChange={this.onChange} />
+                <label htmlFor="foodImage">Image URL</label>
+                <input type="text" name="image" id="foodImage" className="form-control" required onChange={this.onChange}
+                />
               </div>
 
               <label htmlFor="instruction">Preparation Instructions</label>
               <textarea className="form-control" id="instruction" name="instruction" rows="5" required onChange={this.onChange} />
 
               <button type="submit" className="btn custom-button mt-3" > Create Recipe </button>
-              <br />
               <Link to="/recipes" className="btn btn-link mt-3"> Back to recipes </Link>
             </form>
           </div>

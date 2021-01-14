@@ -34,6 +34,7 @@ class Recipe extends React.Component {
       .catch(() => this.props.history.push("/recipes"));
   }
 
+  // Deleting a Recipe
   deleteRecipe() {
     const {
       match: {
@@ -72,6 +73,7 @@ class Recipe extends React.Component {
         ));
     }
 
+    // Preparation Instructions
     const recipeInstruction = this.addHtmlEntities(recipe.instruction);
 
     return (

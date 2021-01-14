@@ -50,17 +50,23 @@ class Recipes extends React.Component {
 
     return (
       <>
-        <section className="jumbotron jumbotron-fluid text-center">
+        <section className="jumbotron jumbotron-fluid bg-transparent text-center" id="mainJumbotron">
+          <div class="hero position-relative d-flex align-items-center justify-content-center">
+            <img class="img-fluid position-absolute" src="http://drive.google.com/uc?export=view&id=1PHnEt7wSHic2CQws8Fhhm1GhaWtLX5p9" class="mx-auto" />
+          </div>
           <div className="container py-5">
-            <h1 className="display-4">Recipes for every occasion</h1>
-            <p className="lead text-muted">
-              We’ve pulled together our most popular recipes, our latest
-              additions, and our editor’s picks, so there’s sure to be something
-              tempting for you to try.
-            </p>
+            <h1 className="display-4" id="textRec">Recipes for every occasion</h1>
+            <div className="card-body">
+              <p className="lead text-muted" >
+                We’ve pulled together our most popular recipes, our latest
+                additions, and our editor’s picks, so there’s sure to be something
+                tempting for you to try.
+              </p>
+            </div>
           </div>
         </section>
-        <div className="py-5">
+
+        <div className="py-5" id="mainContRecipe">
           <main className="container">
             <div className="text-right mb-3">
               <Link to="/recipe" className="btn custom-button">
