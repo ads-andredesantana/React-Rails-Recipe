@@ -52,7 +52,7 @@ class Recipes extends React.Component {
       <>
         <section className="jumbotron jumbotron-fluid bg-transparent text-center" id="mainJumbotron">
           <div class="hero position-relative d-flex align-items-center justify-content-center">
-            <img class="img-fluid position-absolute" src="http://drive.google.com/uc?export=view&id=1PHnEt7wSHic2CQws8Fhhm1GhaWtLX5p9" class="mx-auto" />
+            <img class="img-fluid position-absolute" src="https://drive.google.com/uc?export=view&id=1PHnEt7wSHic2CQws8Fhhm1GhaWtLX5p9" class="mx-auto" />
           </div>
           <div className="container py-5">
             <h1 className="display-4" id="textRec">Recipes for every occasion</h1>
