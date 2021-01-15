@@ -15,12 +15,12 @@
 #   )
 # end
 
-
+# Balsamic Glazed Salmon
 Recipe.create(
   name: 'Fruit Salade Nature',
   ingredients: 'Strawberry, Kiwi, Mango, Bananas',
   instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1hxFIIQ7hfHIbv_IINLlPX7Ijc39-EEjV'
+  image: 'http://drive.google.com/uc?export=view&id=1hxFIIQ7hfHIbv_IINLlPX7Ijc39-EEjV' 
 )
 
 Recipe.create(
@@ -74,7 +74,7 @@ Recipe.create(
 
 Recipe.create(
   name: 'Fruit Salade Nature',
-  ingredients: 'Strawberry, Kiwi, Mango, Bananas',
+  ingredients: '3 ounces pine nuts, Zest and juice of 2 large lemons , 1 large bunch fresh flat-leaf parsley, ½ cup plus 2 tablespoons extra-virgin olive oil , 4 ounces freshly grated Parmesan cheese, 1 ½ ounces freshly grated pecorino cheese , Freshly ground black pepper, Sea salt, 18 ounces good-quality tagliarini ',
   instruction: 'Put Yougurt and Enjoy!',
   image: 'http://drive.google.com/uc?export=view&id=1PfYm9aYuOEVwUowIGMn1Ju6lSFyUyN8A'
 )
