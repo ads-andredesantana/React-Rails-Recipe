@@ -20,61 +20,61 @@ Recipe.create(
   name: 'Fruit Salade Nature',
   ingredients: 'Strawberry, Kiwi, Mango, Bananas',
   instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1hxFIIQ7hfHIbv_IINLlPX7Ijc39-EEjV' 
+  image: 'https://drive.google.com/uc?export=view&id=1hxFIIQ7hfHIbv_IINLlPX7Ijc39-EEjV' 
 )
-
+# Pizza
+# Recipe.create(
+#   name: 'Fruit Salade Nature',
+#   ingredients: 'Strawberry, Kiwi, Mango, Bananas',
+#   instruction: 'Put Yougurt and Enjoy!',
+#   image: 'https://drive.google.com/uc?export=view&id=1SZfGncZdp_KoXYzLVTVPMF2-KfrqQDXd'
+# )
+# Herby Avocado Hummus
 Recipe.create(
   name: 'Fruit Salade Nature',
   ingredients: 'Strawberry, Kiwi, Mango, Bananas',
   instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1SZfGncZdp_KoXYzLVTVPMF2-KfrqQDXd'
+  image: 'https://drive.google.com/uc?export=view&id=1sd7y0Tau5jjjgoHmNR0-TZkN2tp1LBW7'
 )
-
+# Surf and Turf for Two
 Recipe.create(
   name: 'Fruit Salade Nature',
   ingredients: 'Strawberry, Kiwi, Mango, Bananas',
   instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1sd7y0Tau5jjjgoHmNR0-TZkN2tp1LBW7'
+  image: 'https://drive.google.com/uc?export=view&id=1m8gwMO5w0iKkC7ztyzX7c408o5YseSlE'
 )
-
+# Good Old Fashioned Pancakes
 Recipe.create(
   name: 'Fruit Salade Nature',
   ingredients: 'Strawberry, Kiwi, Mango, Bananas',
   instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1m8gwMO5w0iKkC7ztyzX7c408o5YseSlE'
+  image: 'https://drive.google.com/uc?export=view&id=1of6mdA24EpaMOfJ9_FivqsFSiV8NUeoc'
 )
-
+# Eggs & Toast Sandwich with Avocado
 Recipe.create(
   name: 'Fruit Salade Nature',
   ingredients: 'Strawberry, Kiwi, Mango, Bananas',
   instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1of6mdA24EpaMOfJ9_FivqsFSiV8NUeoc'
+  image: 'https://drive.google.com/uc?export=view&id=1ijfuUxiSNoqluFphCU6TL-Y853Sg9xRd'
 )
-
+# Crisped chickpeas with herbs and garlic yogurt
 Recipe.create(
   name: 'Fruit Salade Nature',
   ingredients: 'Strawberry, Kiwi, Mango, Bananas',
   instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1ijfuUxiSNoqluFphCU6TL-Y853Sg9xRd'
+  image: 'https://drive.google.com/uc?export=view&id=1w59gt-Kb5ruA0iDZTxv-uUk11EMaZBYm'
 )
-
+# Vegetable Noodle Soup
 Recipe.create(
   name: 'Fruit Salade Nature',
   ingredients: 'Strawberry, Kiwi, Mango, Bananas',
   instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1w59gt-Kb5ruA0iDZTxv-uUk11EMaZBYm'
+  image: 'https://drive.google.com/uc?export=view&id=1uoNDRtpzmQGkcw2ywusHWRcjDSQLxveP'
 )
-
-Recipe.create(
-  name: 'Fruit Salade Nature',
-  ingredients: 'Strawberry, Kiwi, Mango, Bananas',
-  instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1uoNDRtpzmQGkcw2ywusHWRcjDSQLxveP'
-)
-
+# Jamie Oliver's Summertime Tagliarini
 Recipe.create(
   name: 'Fruit Salade Nature',
   ingredients: '3 ounces pine nuts, Zest and juice of 2 large lemons , 1 large bunch fresh flat-leaf parsley, ½ cup plus 2 tablespoons extra-virgin olive oil , 4 ounces freshly grated Parmesan cheese, 1 ½ ounces freshly grated pecorino cheese , Freshly ground black pepper, Sea salt, 18 ounces good-quality tagliarini ',
   instruction: 'Put Yougurt and Enjoy!',
-  image: 'http://drive.google.com/uc?export=view&id=1PfYm9aYuOEVwUowIGMn1Ju6lSFyUyN8A'
+  image: 'https://drive.google.com/uc?export=view&id=1PfYm9aYuOEVwUowIGMn1Ju6lSFyUyN8A'
 )
