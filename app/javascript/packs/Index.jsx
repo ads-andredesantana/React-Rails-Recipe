@@ -12,3 +12,4 @@ $(document).on('turbolinks:load', function () {
     document.body.appendChild(document.createElement("div"))
   );
 });
+
