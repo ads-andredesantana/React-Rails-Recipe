@@ -105,11 +105,11 @@ class Recipe extends React.Component {
                 }}
               />
             </div>
-            <div className="col-sm-12 col-lg-2">
+            {/* <div className="col-sm-12 col-lg-2">
               <button type="button" className="btn btn-danger" onClick={this.deleteRecipe}>
                 Delete Recipe
               </button>
-            </div>
+            </div> */}
           </div>
           <Link to="/recipes" className="btn btn-link">
             Back to recipes
