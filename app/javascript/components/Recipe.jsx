@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+// import DefaultImage from 'images/default_image.jpg';
 
 class Recipe extends React.Component {
   constructor(props) {
@@ -10,19 +11,15 @@ class Recipe extends React.Component {
     this.deleteRecipe = this.deleteRecipe.bind(this);
   }
 
-  addHtmlEntities(str) {
-    return String(str)
-      .replace(/&lt;/g, "<")
-      .replace(/&gt;/g, ">");
-  }
-
   componentDidMount() {
     const {
       match: {
         params: { id }
       }
     } = this.props;
-    const url = `/api/v1/show/${id}`;
+
+    const url = `/api/v1/recipes/${id}`;
+
     fetch(url)
       .then(response => {
         if (response.ok) {
@@ -34,15 +31,21 @@ class Recipe extends React.Component {
       .catch(() => this.props.history.push("/recipes"));
   }
 
-  // Deleting a Recipe
+  addHtmlEntities(str) {
+    return String(str)
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">");
+  }
+
   deleteRecipe() {
     const {
       match: {
         params: { id }
       }
     } = this.props;
-    const url = `/api/v1/destroy/${id}`;
+    const url = `/api/v1/recipes/${id}`;
     const token = document.querySelector('meta[name="csrf-token"]').content;
+
     fetch(url, {
       method: "DELETE",
       headers: {
@@ -63,6 +66,7 @@ class Recipe extends React.Component {
   render() {
     const { recipe } = this.state;
     let ingredientList = "No ingredients available";
+
     if (recipe.ingredients.length > 0) {
       ingredientList = recipe.ingredients
         .split(",")
@@ -72,15 +76,13 @@ class Recipe extends React.Component {
           </li>
         ));
     }
-
-    // Preparation Instructions
     const recipeInstruction = this.addHtmlEntities(recipe.instruction);
 
     return (
       <div className="">
         <div className="hero position-relative d-flex align-items-center justify-content-center">
           <img
-            src={recipe.image}
+            src={recipe.image || 'https://drive.google.com/uc?export=view&id=1PHnEt7wSHic2CQws8Fhhm1GhaWtLX5p9'}
             alt={`${recipe.name} image`}
             className="img-fluid position-absolute"
           />
@@ -97,7 +99,7 @@ class Recipe extends React.Component {
                 {ingredientList}
               </ul>
             </div>
-            <div className="col-sm-12 col-lg-7">
+            <div className="col-sm-12 col-lg-5">
               <h5 className="mb-2">Preparation Instructions</h5>
               <div
                 dangerouslySetInnerHTML={{
@@ -105,13 +107,17 @@ class Recipe extends React.Component {
                 }}
               />
             </div>
-            {/* <div className="col-sm-12 col-lg-2">
-              <button type="button" className="btn btn-danger" onClick={this.deleteRecipe}>
+            <div className="col-sm-12 col-lg-4 text-right">
+              <Link to={`/recipes/${this.props.match.params.id}/edit`} className="btn btn-success mr-2">
+                Edit Recipe
+              </Link>
+              <button type="button" className="btn btn-danger" onClick={this.deleteRecipe} data-confirm="Do you really want to remove this recipe?">
                 Delete Recipe
               </button>
-            </div> */}
+            </div>
           </div>
-          <Link to="/recipes" className="btn btn-link">
+          <hr />
+          <Link to="/recipes" className="btn btn-secondary">
             Back to recipes
           </Link>
         </div>
