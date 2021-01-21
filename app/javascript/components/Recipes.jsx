@@ -26,50 +26,48 @@ class Recipes extends React.Component {
     const allRecipes = recipes.map((recipe, index) => (
       <div key={index} className="col-md-6 col-lg-4">
         <div className="card mb-4">
-          <img
-            src={recipe.image}
-            className="card-img-top"
-            alt={`${recipe.name} image`}
-          />
+          <img src={recipe.image || 'https://drive.google.com/uc?export=view&id=1PHnEt7wSHic2CQws8Fhhm1GhaWtLX5p9'} className="card-img-top" alt={`${recipe.name} image`} />
+
           <div className="card-body">
             <h5 className="card-title">{recipe.name}</h5>
-            <Link to={`/recipe/${recipe.id}`} className="btn custom-button">
+            <Link to={`/recipes/${recipe.id}`} className="btn custom-button">
               View Recipe
+            </Link>
+            <Link to={`/recipes/${recipe.id}/edit`} className="btn custom-button ml-2">
+              Edit Recipe
             </Link>
           </div>
         </div>
       </div>
     ));
+
     const noRecipe = (
       <div className="vw-100 vh-50 d-flex align-items-center justify-content-center">
         <h4>
-          No recipes yet. Why not <Link to="/new_recipe">create one</Link>
+          No recipes yet. Why not <Link to="/recipes/new">create one</Link>
         </h4>
       </div>
     );
 
     return (
       <>
-        <section className="jumbotron jumbotron-fluid bg-transparent text-center" id="mainJumbotron">
-          <div class="hero position-relative d-flex align-items-center justify-content-center">
-            <img class="img-fluid position-absolute" src="https://drive.google.com/uc?export=view&id=1PHnEt7wSHic2CQws8Fhhm1GhaWtLX5p9" class="mx-auto" />
+        <section className="jumbotron jumbotron-fluid bg-transparent text-center">
+          <div className="hero position-relative d-flex align-items-center justify-content-center">
+            <img className="img-fluid position-absolute" src="https://drive.google.com/uc?export=view&id=1PHnEt7wSHic2CQws8Fhhm1GhaWtLX5p9" className="mx-auto" />
           </div>
           <div className="container py-5">
-            <h1 className="display-4" id="textRec">Recipes for every occasion</h1>
-            <div className="card-body">
-              <p className="lead text-muted" >
-                We’ve pulled together our most popular recipes, our latest
-                additions, and our editor’s picks, so there’s sure to be something
-                tempting for you to try.
-              </p>
-            </div>
+            <h1 className="display-4">Recipes for every occasion</h1>
+            <p className="lead text-muted">
+              We’ve pulled together our most popular recipes, our latest
+              additions, and our editor’s picks, so there’s sure to be something
+              tempting for you to try.
+            </p>
           </div>
         </section>
-
-        <div className="py-5" id="mainContRecipe">
+        <div className="py-5">
           <main className="container">
             <div className="text-right mb-3">
-              <Link to="/recipe" className="btn custom-button">
+              <Link to="/recipes/new" className="btn custom-button">
                 Create New Recipe
               </Link>
             </div>
